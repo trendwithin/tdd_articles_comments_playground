@@ -24,4 +24,5 @@ group :development, :test do
   gem 'terminal-notifier'
   gem 'terminal-notifier-guard'
   gem 'web-console', '~> 2.0'
+  gem 'awesome_print', require:'ap'
 end
