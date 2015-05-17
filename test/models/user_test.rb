@@ -39,4 +39,8 @@ class UserTest < ActiveSupport::TestCase
     user.update(email: user.email, password: '12345678')
     assert user.valid?
   end
+
+  def test_user_role_is_author
+    assert user.role == 'author'
+  end
 end
