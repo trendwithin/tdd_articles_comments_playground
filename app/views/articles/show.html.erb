@@ -6,3 +6,8 @@
   <em>Body:</em>
   <%= @article.body %>
 </p>
+
+<h2>Comments</h2>
+<%= render @article.comments %>
+<h2>Add a comment: </h2>
+<%= render 'comments/form'  %>
