@@ -40,7 +40,7 @@ class ArticlesControllerTest < ActionController::TestCase
 
     get :show, id: article.id
     must_respond_with :success
-    assigns(:article). must_equal(article)
+    assigns(:article).must_equal(article)
   end
 
   def test_destory_an_existing_article
