@@ -2,11 +2,11 @@
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  commenter: MyString
-  body: MyText
-  article: 
+  commenter: us@them.com
+  body: Up Up and Away in My Beautiful Baloon
+  article: one
 
 two:
-  commenter: MyString
-  body: MyText
-  article: 
+  commenter: meet@joes.com
+  body: 99 luft baloons
+  article: one
