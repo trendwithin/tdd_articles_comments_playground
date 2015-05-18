@@ -1,0 +1,10 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: The Rise and Fall of a Hot Air Balloon
+  body: Upon lift off the passangers breath gave lift...
+
+two:
+  title: The Once and Future Past
+  body: At this moment a second ago...
