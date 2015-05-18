@@ -12,7 +12,7 @@ feature "Create New Article" do
     visit new_article_path
     fill_in 'Title', with: 'Newest Article'
     fill_in 'Body', with: 'New Body'
-    click_on 'Save Article'
+    click_on 'Create Article'
     page.must_have_content 'Newest Article'
     page.must_have_content 'New Body'
   end
@@ -21,7 +21,7 @@ end
 feature "Create New Aritcle" do
   scenario "Empty Title" do
     visit new_article_path
-    click_on 'Save Article'
+    click_on 'Create Article'
     page.must_have_content 'Title can\'t be blank'
     page.must_have_content 'Body can\'t be blank'
   end
