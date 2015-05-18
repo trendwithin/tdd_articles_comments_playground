@@ -42,4 +42,13 @@ class ArticlesControllerTest < ActionController::TestCase
     must_respond_with :success
     assigns(:article). must_equal(article)
   end
+
+  def test_destory_an_existing_article
+    article = articles(:one)
+    assert_difference('Article.count', -1) do
+      delete :destroy, id: article.id
+    end
+
+    assert_redirected_to articles_path
+  end
 end
